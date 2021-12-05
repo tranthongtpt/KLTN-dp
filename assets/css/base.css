@@ -38,15 +38,13 @@ html{
 section{
     padding: 5rem 12.5rem;
 }
-.col-red{
-    background-color: var(--red) !important;
-}
+
 /* color */
 .col-black{
     color: var(--black-color);
 }
 .col-bule{
-    background: linear-gradient(279.57deg, #072D94 0%, #7797EE 79.96%, rgba(91, 135, 255, 0.43) 100%);
+    color: var(--bridge-blue);
 }
 .cl-white{
     color:var(--white-color);
@@ -54,14 +52,10 @@ section{
 .cl-green{
     color: #5dac46;
 }
-/* grid */
-.grid__full-width{
-    width: 100%;
+.col-red{
+    background: var(--red) !important;
 }
-.grid__row{
-    display: flex;
-    flex-wrap:wrap;
-}
+
 /* end */
 @keyframes fadeIn{
     form{
@@ -77,34 +71,6 @@ section{
         transform: scale(var(--growth-to));
     }
 }
-/* modal */
-.modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    animation: fadeIn linear 0.1s;
-}
-.modal__overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(17, 41, 80, 0.5);
-}
-.modal__body{
-    /* width: 348px;
-    height: 400px; */
-    --growth-from:0.7;
-    --growth-to:1;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-    animation: growth linear 0.1;
-    overflow: hidden;
-}
-/* button style */
 .btn{
     display:inline-block;
     padding:.9rem 3rem;
@@ -120,18 +86,6 @@ section{
 }
 .btn.btn--normal:hover{
     background-color: rgba(0,0,0,0.1);
-}
-.btn.btn--size-s{
-    height: 32px;
-    font-size: 12px;
-    padding: 0 8px;
-}
-.btn.btn--primary{
-    color:var(--white-color);
-    background-color: var(--primary-color);
-} 
-.btn.btn--disabled{
-    cursor: default;
 }
 img{
     display: block;

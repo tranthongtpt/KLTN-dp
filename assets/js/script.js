@@ -13,6 +13,38 @@ function login() {
     z.style.left = "0";
 }
 
+var x=true;
+function myfunction(){
+  if(x){
+    document.getElementById('pass').type="text";
+    x=false;
+  } else {
+    document.getElementById('pass').type="password"
+    x=true;
+  }
+}
+
+
+let loginForm = document.querySelector('.login-form-container');
+
+document.querySelector('#login-btn').onclick = () =>{
+  loginForm.classList.toggle('active');
+}
+
+document.querySelector('#close-login-btn').onclick = () =>{
+  loginForm.classList.remove('active');
+}
+
+let signForm = document.querySelector('.sign-form-container');
+
+document.querySelector('#sign-btn').onclick = () =>{
+  signForm.classList.toggle('active');
+}
+
+document.querySelector('#close-sign-btn').onclick = () =>{
+  signForm.classList.remove('active');
+}
+
 window.onscroll = () =>{
 
   if(window.scrollY > 80){
