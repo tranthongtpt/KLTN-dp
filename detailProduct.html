@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/icons8-samsung-health-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/detailProduct.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="./assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="grid">
+            <div class="header__navbar py-2">
+                <ul class="header__navbar-list mb-0">
+                    <li class="header__navbar-item ">
+                        <span class="header__navbar-title--no-pointer fw-bold">Hotline đặt hàng</span>
+                        <i class="header__navbar-icon fas fa-phone-alt header__navbar-title--no-pointer"></i>
+                        <span class="header__navbar-title--no-pointer fw-bold">(+84) 0395557279</span>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list mb-0">
+                    <li class="header__navbar-item">
+                        <a href="https://goo.gl/maps/3Fcog1hcbLVfHPoj8" target="_blank" rel="noopener"
+                            class="text-decoration-none col-black">
+                            <i class="header__navbar-icon fas fa-map-marker-alt fw-bold "></i>Địa điểm</i></a>
+                    </li>
+                    <li id="sign-btn" class="header__navbar-item fw-bold">Đăng ký</li>
+                    <li id="login-btn1" class="header__navbar-item fw-bold">Đăng nhập</li>
+                </ul>
+            </div>
+            <div class="header-with-search">
+                <div id="list-cetagory" class="fas fa-map-marker-alt"></div>
+                <a href="/">
+                    <img src="assets/img/logo2.png" alt="bn-logo">
+                </a>
+                <form class="search-form">
+                    <input type="search" id="search-box"header__navbar placeholder="Bạn đang tìm gì hôm nay..." required>
+                    <label for="search-box" class="fas fa-search fs-3 pe-3  "></label>
+                </form>
+                
+                <div class="header__cart-icon">
+                     <a class="text-decoration-none pe-3" href="#">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a class="text-decoration-none " href="#">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="checkout_items" class="checkout_items">2</span>
+                    </a>
+                    <div id="login-btn" class="fas fa-user"></div>
+                </div>
+            </div>
+            <!-- tablet -->
+            <div id="header-with-search1">
+                <form class="search-form1">
+                    <input type="search" id="search-box"header__navbar placeholder="Bạn đang tìm gì hôm nay..." required>
+                    <label for="search-box" class="fas fa-search fs-3 pe-3  "></label>
+                </form>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="navbar justify-content-center py-0">
+                <ul id="nav">
+                    <li>
+                        <a href="#"><i class="fas fa-bars"></i>Danh mục</a>
+                        <ul class="subnav">
+                            <li><a href="#">Dược phẩm</a></li>
+                            <li><a href="#">Chám sóc sức khỏe</a></li>
+                            <li><a href="#">Sản phẩm tiện lợi</a></li>
+                            <li><a href="#">Thực phẩm chức năng</a></li>
+                            <li><a href="#">Mẹ và bé</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Nhãn hàng<i class="pd-l fas fa-angle-down"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">Dược phẩm</a></li>
+                            <li><a href="#">Chám sóc sức khỏe</a></li>
+                            <li><a href="#">Sản phẩm tiện lợi</a></li>
+                            <li><a href="#">Thực phẩm chức năng</a></li>
+                            <li><a href="#">Mẹ và bé</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sản phẩm Covid19</a>
+                    </li>
+                    <li>
+                        <a href="#">Dược mỹ phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#">Góc sức khỏe</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Khuyễn mãi Hot</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- mainlayout-content -->
+    <div class="productInfo__header">
+        <div class="container-detail">
+            <nav>
+                <ol class="Breadcrumbs">
+                    <li class="Breadcrumbs__item"><a href="">Trang chủ</a></li>
+                    <li class="Breadcrumbs__item"><a href="">Chăm sóc sức khỏe</a></li>
+                    <li class="Breadcrumbs__item Breadcrumbs__item-active"><a href="">Lon sữa</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="productInfo__container container">
+        <div class="productInfo-left">
+            <div class="productThumbnail">
+                <div class="productThumbnail__wrap">
+                    <img src="assets/img/P07244_2-removebg-preview.png" alt="">
+                </div>
+
+                <div class="productThumbnail-list-small">
+                    <figure
+                        class="productThumbnail-list-small__image cursor-point productThumbnail-list-small__image-active">
+                        <img src="assets/img/img-list-item5.png" alt="">
+                    </figure>
+                    <figure
+                        class="productThumbnail-list-small__image cursor-point productThumbnail-list-small__image-active">
+                        <img src="assets/img/img-list-item3.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="productInfo-right">
+            <div class="productContent__product-content">
+                <span class="fs-32 fw-bold">Sữa lon dành cho trẻ em</span>
+                <div class="divider"></div>
+                <div class="productContent__body">
+                    <div class="productContent__body-left">
+                        <div class="productContent__product-price">
+                            <span class="fs-32 f-w-500">500.000đ</span>
+                            <span class="fs-24">/Lon</span>
+                        </div>
+                        <div class="productContent_description">
+                            <table>
+                                <tbody class="attr-product">
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Danh mục: </td>
+                                        <td> Hỗ trợ miễn dịch - Tăng sức đề kháng</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Quy cách:</td>
+                                        <td>Lon Big</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Xuất xứ thương hiệu:</td>
+                                        <td>Việt Nam</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Dạng bào chế:</td>
+                                        <td>Bột</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Công dụng:</td>
+                                        <td>Giúp trẻ ăn mau chóng lớn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Đối tượng:</td>
+                                        <td>Ai cũng được</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Hỗ trợ điều trị:</td>
+                                        <td>Giúp mau lớn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Nước sản xuất:</td>
+                                        <td>Việt Nam</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l-h-24 f-w-500">Nhà sản xuất:</td>
+                                        <td>Nhóm chúa hề</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="choose-quanity mt-4">
+                            <p class="fs-3 fw-bold">Chọn số lượng</p>
+                            <div class="quantity-box m-l-16">
+                                <button><p>-</p></button>
+                                <input readonly value="0" class="vv">
+                                <button><p>+</p></button>
+                            </div>
+                        </div>
+                        <div class="choose-buy m-t-16">
+                            <button class="btn fs-16">Chọn mua</button>
+                        </div>
+                        <div class="commit-with-customer mt-5 card b-radius-12 flex-row">
+                            <div class="feature-item">
+                                <i class="fas fa-sync"></i>
+                                <div class="item-text">
+                                    <p>Đổi trả 30 ngày</p>
+                                    <p>Kể từ ngày mua hàng</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-thumbs-up"></i>
+                                <div class="item-text">
+                                    <p>Miễn phí 100%</p>
+                                    <p>Đổi thuốc</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <div class="item-text">
+                                    <p>Miễn phí vận chuyển</p>
+                                    <p>Theo chính sách giao hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- footer start ------------------------------->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h1>QUẦY THUỐC BẢO NGÂN</h1>
+                <p class="font-in-box">Tại đây chúng tôi luôn tận tâm phục vụ và được đào tạo để hoàn thành xuất sắc
+                    những sứ mệnh được giao. Đưa những loại thuốc tốt nhất đến tay người tiêu dùng.</p>
+            </div>
+
+            <div class="box">
+                <h3>Liên kết hữu ích</h3>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Câu hỏi thằng gặp
+                </a>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Chính sách giao hàng
+                </a>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Thành viên
+                </a>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Chính sách bảo mật
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>Chứng nhận của chúng tôi</h3>
+                <a href="#">
+                    <img class="imageChange" src="assets/img/bo-cong-thuong.svg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <h3>Thông tin về chúng tôi</h3>
+                <a href="#">
+                    <i class="fas fa-phone"></i>(+84) 0395557279
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope"></i>thongn311@gmail.com
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marked-alt"></i>Địa chỉ: Việt Nam
+                    <img class="map" src="assets/img/worldmap.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="credit">
+            <p>© 2021 Công ty Cổ Phần Dược Phẩm Bảo Ngân Số ĐKKD xxxxxxxxxx cấp ngày xx/xx/2021 tại Sở Kế hoạch Đầu tư
+                TPHCM
+                Địa chỉ: xxx TP. HCM. Số điện thoại: (+84) 0395557279
+                Email: sale@baongan.com - Người quản lý nội dung: Nhóm chúa hề</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="http://www.maytinhhtl.com/images/code/snowstorm.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

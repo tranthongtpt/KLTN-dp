@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/icons8-samsung-health-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/show_cart.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="grid">
+            <div class="header__navbar py-2">
+                <ul class="header__navbar-list mb-0">
+                    <li class="header__navbar-item ">
+                        <span class="header__navbar-title--no-pointer fw-bold">Hotline đặt hàng</span>
+                        <i class="header__navbar-icon fas fa-phone-alt header__navbar-title--no-pointer"></i>
+                        <span class="header__navbar-title--no-pointer fw-bold">(+84) 0395557279</span>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list mb-0">
+                    <li class="header__navbar-item">
+                        <a href="https://goo.gl/maps/3Fcog1hcbLVfHPoj8" target="_blank" rel="noopener"
+                            class="text-decoration-none col-black">
+                            <i class="header__navbar-icon fas fa-map-marker-alt fw-bold "></i>Địa điểm</i></a>
+                    </li>
+                    <li id="sign-btn" class="header__navbar-item fw-bold">Đăng ký</li>
+                    <li id="login-btn" class="header__navbar-item fw-bold">Đăng nhập</li>
+                </ul>
+            </div>
+            <div class="header-with-search">
+                <a href="/">
+                    <img src="./assets/img/logo2.png" alt="bn-logo">
+                </a>
+                <form class="search-form">
+                    <input type="search" id="search-box" placeholder="Bạn đang tìm gì hôm nay..." required>
+                    <label for="search-box" class="fas fa-search fs-3 pe-3"></label>
+                </form>
+                <div class="header__cart-icon">
+                    <a class="text-decoration-none" href="#">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="checkout_items" class="checkout_items">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="navbar justify-content-center py-0">
+                <ul id="nav">
+                    <li>
+                        <a href="#"><i class="fas fa-bars"></i>Danh mục</a>
+                        <ul class="subnav">
+                            <li><a href="#">Dược phẩm</a></li>
+                            <li><a href="#">Chám sóc sức khỏe</a></li>
+                            <li><a href="#">Sản phẩm tiện lợi</a></li>
+                            <li><a href="#">Thực phẩm chức năng</a></li>
+                            <li><a href="#">Mẹ và bé</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Nhãn hàng<i class="pd-l fas fa-angle-down"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">Dược phẩm</a></li>
+                            <li><a href="#">Chám sóc sức khỏe</a></li>
+                            <li><a href="#">Sản phẩm tiện lợi</a></li>
+                            <li><a href="#">Thực phẩm chức năng</a></li>
+                            <li><a href="#">Mẹ và bé</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sản phẩm Covid19</a>
+                    </li>
+                    <li>
+                        <a href="#">Dược mỹ phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#">Góc sức khỏe</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Khuyễn mãi Hot</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <div class="site-content">
+        <div class="container">
+            <div class="box-big text-center">
+                <h1 class="text-uppercase fs-32">Đặt hàng thành công!</h1>
+                <p><i>Do ảnh hưởng dịch bệnh, đơn hàng của bạn có thể được giao chậm hơn bình thường. BaoNgan sẽ cố gắng hết sức, bạn chờ BaoNgan nha.</i></p>
+                <p class="order-heading">Thông tin đơn hàng</p>
+                <div class="box-small">
+
+                    <div class="grid-show-cart">
+                        <div class="col"></div>
+                        <div class="col">
+                            <div class="order-title">
+                                <h3>ĐƠN HÀNG #111111</h3>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá niêm yết</th>
+                                <th class="text--right">Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text--left">
+                                    Sữa lon dành cho trẻ em
+                                </td>
+                                <td>1</td>
+                                <td>500.000đ</td>
+                                <td>500.000đ</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Mã giảm giá</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Tổng giá trị sản phẩm</td>
+                                <td>500.000đ</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Voucher khuyến mãi</td>
+                                <td>0đ</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Phí giao hàng</td>
+                                <td>+25.000đ</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold fs-1" colspan="3">Tổng thanh toán</td>
+                                <td class="fw-bold fs-2">525.000đ</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <p class="order-heading ">Thông tin nhận hàng</p>
+                <div class="box-small text--left">
+                    <p>Tên người nhận: Justin Nguyen</p>
+                    <p>Email: thongn311@gmail.com</p>
+                    <p>Số điện thoại: 0123546987</p>
+                    <p>Hình thức thanh toán: Thanh toán khi nhận hàng (COD)</p>
+                    <p>Địa chỉ nhận hàng: Quảng Trị, Việt Nam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- footer start ------------------------------->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h1>QUẦY THUỐC BẢO NGÂN</h1>
+                <p class="font-in-box">Tại đây chúng tôi luôn tận tâm phục vụ và được đào tạo để hoàn thành xuất sắc
+                    những sứ mệnh được giao. Đưa những loại thuốc tốt nhất đến tay người tiêu dùng.</p>
+            </div>
+
+            <div class="box">
+                <h3>Liên kết hữu ích</h3>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Câu hỏi thằng gặp
+                </a>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Chính sách giao hàng
+                </a>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Thành viên
+                </a>
+                <a href="#">
+                    <i class="fas fa-arrow-right"></i>Chính sách bảo mật
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>Chứng nhận của chúng tôi</h3>
+                <a href="#">
+                    <img class="imageChange" src="assets/img/bo-cong-thuong.svg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <h3>Thông tin về chúng tôi</h3>
+                <a href="#">
+                    <i class="fas fa-phone"></i>(+84) 0395557279
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope"></i>thongn311@gmail.com
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marked-alt"></i>Địa chỉ: Việt Nam
+                    <img class="map" src="assets/img/worldmap.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="share">
+            <img class="imglogo" src="assets/img/image-fz-f.png" alt="">
+            <img class="imglogo" src="assets/img/image-fz-z.png" alt="">
+        </div>
+        <div class="credit">
+            <p>© 2021 Công ty Cổ Phần Dược Phẩm Bảo Ngân Số ĐKKD xxxxxxxxxx cấp ngày xx/xx/2021 tại Sở Kế hoạch Đầu tư
+                TPHCM
+                Địa chỉ: xxx TP. HCM. Số điện thoại: (+84) 0395557279
+                Email: sale@baongan.com - Người quản lý nội dung: Nhóm chúa hề</p>
+        </div>
+    </section>
+</body>
+</html>
